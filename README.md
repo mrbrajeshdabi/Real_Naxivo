@@ -2,7 +2,7 @@
 🚀 Build Real Time Project 🚀 
 ☄️☄️☄️☄️☄️ 
 -------------
-🚫Coming 🔜 
+🚫Now Coming
  ------------
 📂Project Info [Naxivo]
 🚀 Real Time Communication 
