@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Naxivo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/socket.io.js"></script>
+</head>
+<body class="body">
+
+<div class="container-fluid bg-dark p-0 m-0" id="container">
+    <div class="row p-0 m-0">
+        <div class="col-md-3 p-0 m-0">
+            <div class="animate__animated animate__fadeIn" id="coloring">
+                <div class="card bg-dark text-light">
+                    <!-- <div class="card-header">
+                         <div class="card-title text-light">NV</div>
+                    </div> -->
+                    <div class="card-body p-0 m-0">
+                        <div class="laptopchat animate__animated animate__fadeIn">
+                            <ul class="list-group" id="insertchatuserlist">
+                                <li class="list-group-item bg-dark"><center><a href="../../profile.html" class="nav-link"><button class="btn btn-outline-primary" id="back">Back</button></a></center></li>
+                            </ul>
+                        </div>
+                        <div class="mobilechat animate__animated animate__fadeIn p-0 m-0">
+                            <ul class="list-group" id="insertchatuser">
+                                <li class="list-group-item bg-dark"><center><a href="../../profile.html" class="nav-link"><button class="btn btn-outline-primary" id="backmobile">Back</button></a></center></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 p-0 m-0">
+            <div class="animate__animated animate__fadeIn d-none bg-dark" id="chatboxcontainer">
+            <div class="container p-3 bg-dark">
+                <div class="d-flex">
+                    <img src="" id="imglogo" class="img-fluid img-thumbnail rounded chatcontainerimg">
+                    <span class="chatstatus text-danger"></span>
+                    <span class="chatusername"></span>
+                    <i class="fa fa-sign-out text-light" id="backbtn"></i>
+                </div>
+                <div class="listenerlogo d-none">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                        <div class="dot3"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- chatbox start -->
+            <div class="insertchatbox">
+                <div class="chatbox"></div>
+            </div>
+            <!-- chatbox end -->
+
+            <!-- form start -->
+
+            <form class="chat_frm bg-light">
+                <div class="form-group d-flex">
+                    <input type="hidden" id="incomingid">
+                    <input type="text" class="form-control bg-light text-dark border" name="message" id="message" placeholder="type.." autocomplete="off">
+                    <button class="btn btn-light" type="submit" id="sendmsgbtn"><i class="fa-solid fa-paper-plane"></i></button>
+                    <button class="btn btn-light rounded img-fluid img-thumbnail" type="button" id="image"><i class="fa fa-camera-retro"></i></button>
+                    <button class="btn btn-light" type="button" id="video"><i class="fa fa-video-camera"></i></button>
+                </div>
+            </form>
+             <!-- form end -->
+        </div>
+            <!-- end chatboxconntainer -->
+        </div>
+        <!-- end col-md-9 -->
+    </div>
+    <!-- end row -->
+</div>
+
+</body>
+</html>
+<script src="../js/auth.js"></script>
+<script src="../js/io.js"></script>
+<script src="../js/CHAT/accepteduser.js"></script>
+<script src="../js/CHAT/chatnow.js"></script>
+<script src="../js/CHAT/imageupload.js"></script>
+<script src="../js/CHAT/videoupload.js"></script>
+<!-- <script src="assets/js/CHAT/accepteduser.js"></script>
+<script src="assets/js/CHAT/chatnow.js"></script> -->
